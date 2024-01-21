@@ -17,46 +17,59 @@ h1{
     color: darkred;
     
 }
-.homebarre h2{
-    color: black;
-}
-body{
-    background-image: url(../image/banberroaster.jpg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    background-color: lightgrey;
-}
+/*-- tabs --*/
 
-.flex{
-    display: flex;
-    justify-content: space-around;
-}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+ 
+  }
+  
 
-.personnage{
-    background-image: url(../image/roaster.jpg) ;
-    background-size: cover;
-    max-width: 30vw;
-    max-height: 30vh;
-   
-}
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
 
-.accueil{
-    background-image: url(../image/homeicone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 30vw;
-    max-height: 30vh;
-    
-}
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
 
-.achat{
-    background-image: url(../image/moneyicone.png) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 30vw;
-    max-height: 30vh;
-    
-}
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
 
 ul{
     list-style-type: none;
@@ -165,6 +178,74 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
+/* -- dark mode --*/
+
+.light{
+    background-image: url("../image/banberroaster.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+}
+
+.dark{
+    
+        background-image: url("../image/bannermobile.jpg");
+        background-size: cover ;
+        background-repeat: no-repeat;
+         background-color: rgb(141, 32, 35);
+    h1{
+        color: black;
+    }
+}
+
+#lightMode{
+   background-color: black;
+   color: aliceblue;
+}
+
+#darkMode{
+   background-color: aliceblue;
+}
+.switchMode {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.display {
+
+    display: none;
+}
+.lightFooter{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.darkFooter{
+    background-color: rgb(135, 0, 0);
+    border-radius: 10px;
+
+}
+
+
+/* -- footer --*/
+
+#lightFooter{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+ }
+
+
+
+
+
+ 
+/* -- responsive  --*/
+
 
 
 

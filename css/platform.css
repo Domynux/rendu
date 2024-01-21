@@ -17,101 +17,209 @@ h1{
     color: darkred;
     
 }
-.homebarre h2{
+/*-- tabs --*/
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+ 
+  }
+  
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80vw;
+    height: 12vh;
     color: black;
 }
-body{
-    background-image: url(../image/banberroaster.jpg);
+
+
+
+.logo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60%;
+}
+
+.logoSteam{
+    background-image: url("../image/platformlogo/steamlogo.png");
+    
+}
+
+.logoXbox{
+    background-image: url("../image/platformlogo/xboxlogo.png");
+}
+
+.logoPlaystation{
+    background-image: url("../image/platformlogo/playstationlogo.png");
+}
+.logoInstantGaming{
+    background-image: url("../image/platformlogo/instantgaminglogo.png");
+}
+
+
+/* swiper */
+
+.swiper-slide{
+    height: 100vh;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+body .swiper-pagination-bullet{
+    width: 18px;
+    height: 18px;
+}
+
+
+/* color slider*/
+
+
+.steam {
+    display: flex;
+    align-items: center ;
+    background-color: darkgrey;
+    border-radius: 40px;
+    height: 50%;
+}
+
+
+.xbox {
+    display: flex;
+    align-items: center ;
+    background-color: green;
+    border-radius: 40px;
+    height: 50%;
+}
+
+.playstation {
+    display: flex;
+    align-items: center ;
+    background-color: rgb(72, 72, 240);
+    border-radius: 40px;
+    height: 50%;
+}
+
+.instantGaming {
+    display: flex;
+    align-items: center ;
+    background-color: orange;
+    border-radius: 40px;
+    height: 50%;
+}
+
+
+/* dark mode */
+
+.light{
+    background-image: url("../image/banberroaster.jpg");
     background-size: cover ;
     background-repeat: no-repeat;
     background-color: lightgrey;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-around;
-}
-
-.personnage{
-    background-image: url(../image/roaster.jpg) ;
-    background-size: cover;
-    max-width: 30vw;
-    max-height: 30vh;
-   
-}
-
-.accueil{
-    background-image: url(../image/homeicone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 30vw;
-    max-height: 30vh;
+.dark{
     
+        background-image: url("../image/bannermobile.jpg");
+        background-size: cover ;
+        background-repeat: no-repeat;
+         background-color: rgb(141, 32, 35);
+    h1{
+        color: black;
+    }
 }
 
-.achat{
-    background-image: url(../image/moneyicone.png) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 30vw;
-    max-height: 30vh;
-    
+#lightMode{
+   background-color: black;
+   color: aliceblue;
 }
 
-ul{
-    list-style-type: none;
+#darkMode{
+   background-color: aliceblue;
+}
+.switchMode {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    min-width: 80vw;
-    min-height: 20vh;
-}
-h3{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80vw;
-    height: 12vh;
-    color: black;
-}
-.steam {
-    background-color: darkgrey;
-    background-image: url(../image/platformlogo/steamlogo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-   
+    justify-content: flex-end;
 }
 
+.display {
 
-.xbox {
-    background-color: green;
-    background-image: url(../image/platformlogo/xboxlogo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: none;
+}
+.lightFooter{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
 }
 
-.playstation {
-    background-color: rgb(0, 0, 173);
-    background-image: url(../image/platformlogo/playstationlogo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.darkFooter{
+    background-color: rgb(135, 0, 0);
+    border-radius: 10px;
+
 }
 
-.instantgaming {
-    background-color: orange;
-    background-image: url(../image/platformlogo/instantgaminglogo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-footer{
-    background-color: rgba(0, 0, 0, 0.571);
-}
-
-
-
-
+/* responsive */
 @media screen and (max-width: 1024px){
     body{
         background-image: url(../image/banner.jpg);
